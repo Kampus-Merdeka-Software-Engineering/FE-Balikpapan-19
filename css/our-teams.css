@@ -1,0 +1,289 @@
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.wrapper {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+
+/* NAVIGASI */
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    background: #279EFF;
+    z-index: 1;
+    /* border-bottom:1px solid #364f6b; */
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+.wrapper-nav{
+    width: 100%;
+}
+
+.wrapper-nav .menu{
+    display: flex;
+    justify-content: space-around;
+}
+
+.wrapper-nav .menu img{
+    width: 100px;
+}
+
+nav ul li a {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #3f72af;
+    transition: .3s;
+}
+
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+
+/* TEAM */
+html {
+    font-family: sans-serif;
+    font-weight: 300;
+    color: hsl(0 0% 15%);
+}
+
+.container h2 {
+    font-weight: bold;
+    margin: 50px;
+    font-size: 50px;
+    text-align: center;
+}
+
+p {
+    margin: 0;
+}
+
+.container{
+    width: 80%;
+    margin: 50px auto;
+}
+
+
+figure {
+    width: 500px;
+    aspect-ratio: 8 / 5;
+    --bg: hsl(220 90% calc(90% - (var(--hover) * 10%)));
+    --accent: hsl(203, 86%, 46%);
+    transition: background 0.2s;
+    background:
+    radial-gradient(circle at top left, var(--accent), transparent 75%),
+    var(--bg);
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1.5rem;
+    display: block;
+    margin: 20px auto 0;
+}
+
+figure:after {
+    content: "";
+    position: absolute;
+    width: 20%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    bottom: 0%;
+    left: 10%;
+    background: linear-gradient(-65deg, var(--bg) 40%, var(--accent) 50%);
+    filter: blur(85px);
+    transform:
+      translateX(calc(var(--hover) * 15%))
+      scale(calc(1 + (var(--hover) * 0.2)));
+    transition: transform 0.2s, background 0.2s;
+}
+
+.container img {
+    position: absolute;
+    left: 20%;
+    top: 15%;
+    width: 50%;
+    transform:
+      translateX(calc(var(--hover) * -15%))
+      scale(calc(1 + (var(--hover) * 0.2)));
+    transition: transform 0.2s;
+}
+
+.our-team {
+    box-shadow: 1px 2px 3px 4px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    padding: 50px;
+}
+
+.our-team h4{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.team-list{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team {
+    --hover: 0;
+    width: 50%;
+}
+
+.team:hover {
+    --hover: 1;
+}
+
+
+/* FOOTER */
+#contact {
+    background: rgb(42,153,175);
+    background: linear-gradient(90deg, rgba(42,153,175,1) 18%, rgba(64,138,255,1) 88%);
+    padding:50px 0px 50px 0px;
+    margin-top: 200px;
+}
+
+.footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    line-height: 40px;
+}
+
+.footer-section svg {
+    margin-right: 20px;
+}
+
+.footer-section {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.footer .footer-section img{
+    width: 200px;
+}
+
+.team h3 {
+    font-family: 'Cambria', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    margin: 10px 0;
+    color: #364f6b;
+    width: 100%;
+    text-align: center;
+}
+
+.team p{
+    text-align: center;
+}
+
+@media screen and (max-width: 991.98px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    .logo a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav{
+        height: 130px;
+    }
+
+    nav .menu {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav .menu ul {
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+    }
+
+    nav .menu ul li {
+        display: inline-block;
+        float: none;
+    }
+    
+    .team-list{
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .container h2{
+        font-size: 30px;
+    }
+
+    figure{
+        width: 100%;
+    }
+
+    .team{
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .team:hover {
+        --hover: 1;
+    }
+
+    section img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-section {
+        width: 100%;
+        text-align: center;
+        margin: 20px 0;
+    }
+    
+}

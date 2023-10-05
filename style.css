@@ -1,0 +1,450 @@
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.wrapper {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+
+/* NAVIGASI */
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    background: #279EFF;
+    z-index: 1;
+    /* border-bottom:1px solid #364f6b; */
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+.wrapper-nav{
+    width: 100%;
+}
+
+.wrapper-nav .menu{
+    display: flex;
+    justify-content: space-around;
+}
+
+.wrapper-nav .menu img{
+    width: 100px;
+}
+
+nav ul li a {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #3f72af;
+    transition: .3s;
+}
+
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+
+/* HOME */
+.wrapper-home{
+    background: rgb(42,153,175);
+    background: linear-gradient(90deg, rgba(42,153,175,1) 18%, rgba(64,138,255,1) 88%);
+    width: 100%;
+    height: 500px;
+    padding-top: 150px;
+}
+
+.wrapper-home #home{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.wrapper-home #home img{
+    order: 1;
+    width: 600px; 
+    margin-top: 30px;
+}
+
+.input-number-track{
+    padding: 10px 10px;
+    width: 300px;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.btn-track{
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    box-shadow: 1px 2px 3px 2px rgba(0, 0, 0, 0.2);
+}
+
+.btn-track:hover{
+    color: rgb(255, 255, 255);
+    transition: .5s;
+    background-color: #364f6b;
+    cursor: pointer;
+}
+
+.kolom {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.kolom p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h2 {
+    font-family: ''Cambria', sans-serif';
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #364f6b;
+    width: 100%;
+    line-height: 50px;
+}
+
+a.tbl-biru {
+    background: #3f72af;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tbl-biru:hover {
+    background: #364f6b;
+    transition: .3s;
+    color: rgb(366, 366, 366);
+    text-decoration: none;
+}
+
+p {
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+}
+
+.tengah {
+    text-align: center;
+    width: 100%;
+}
+
+/* CEK ONGKIR */
+.containerCekOngkir {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px 4px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    margin: 150px auto 0;
+    width: 60%;
+    text-align: center;
+}
+
+.containerCekOngkir h2 {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.form-group {
+    margin: 20px auto;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 30px;
+}
+
+input[type="text"], input[type="number"] {
+    width: 50%;
+    padding: 20px;
+    margin-top: 10px;
+    border: 1.5px solid #ccc;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.servicesOption{
+    width: 20%;
+    padding: 20px;
+    margin-top: 10px;
+    border: 1.5px solid #ccc;
+    border-radius: 3px;
+    text-align: center;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    box-shadow: 1px 2px 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+/* LAYANAN */
+.services-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.services-card {
+    width: 20%;
+    margin: 0 auto;
+    background: rgb(42,153,175);
+    background: linear-gradient(90deg, rgba(42,153,175,1) 18%, rgba(64,138,255,1) 88%);
+    padding: 30px;
+    opacity: .8;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 1px 2px 3px 4px rgba(12,12,12,0.2);
+}
+
+.services-card:hover{
+    transition: .3s;
+    opacity: 1;
+}
+
+.services-card img {
+    width: 80%;
+    margin: auto;
+}
+
+.services-card p {
+    font-family: 'Cambria', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    text-align: center;
+    color: #000;
+}
+
+.services-card p.notes{
+    color: red;
+}
+
+#service .tengah .kolom p{
+    width: 50%;
+    margin: auto;
+    font-size: 20px;
+}
+
+.team-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kartu-team {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.kartu-team img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+
+/* FOOTER */
+#contact {
+    background: #279EFF;
+    padding:50px 0px 50px 0px;
+    margin-top: 200px;
+}
+
+.footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.footer-section svg {
+    margin-right: 20px;
+}
+
+.footer-section {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.footer .footer-section img{
+    width: 200px;
+}
+
+h3 {
+    font-family: 'Cambria', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #364f6b;
+    width: 100%;
+    line-height: 20px;
+}
+
+@media screen and (max-width: 991.98px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    .logo a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav{
+        height: 130px;
+    }
+
+    nav .menu {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav .menu ul {
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+    }
+
+    .wrapper-home #home{
+        display:block;
+    }
+
+    .wrapper-home #home img{
+        width: 300px;
+        margin: -100px auto;
+    }
+
+    .wrapper-home #home .kolom{
+        margin-left: 50px;
+        margin-top: 100px;
+    }
+
+    nav .menu ul li {
+        display: inline-block;
+        float: none;
+    }
+
+    .containerCekOngkir{
+        width: 60%;
+    }
+
+    .servicesOption{
+        width: 100%;
+    }
+
+    input[type="text"], input[type="number"] {
+        width: 80%;
+    }
+    
+    .team-list{
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .services-card img {
+        width: 80%;
+        margin: auto;
+    }
+
+    .kartu-team{
+        width: 100%;
+        margin-top: 50px auto 0;
+    }
+
+    section {
+        display: block;
+    }
+
+    section img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .services-card {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+
+    #service .tengah .kolom p{
+        width: 80%;
+        margin: auto;
+        font-size: 20px;
+    }
+
+    .kartu-team {
+        width: 50%;
+    }
+
+    .footer-section {
+        width: 100%;
+        text-align: center;
+        margin: 20px 0;
+    }
+    
+}

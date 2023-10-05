@@ -4,137 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Courier.co</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="/css/our-teams.css">
 </head>
 <body>
     <!-- NAVIGASI -->
     <nav>
         <div class="wrapper-nav">
             <div class="menu">
-                <img src="./img/logo.png" alt="">
+                <img src="/img/logo.png" alt="">
                 <ul>
-                    <li><a href="#home">Beranda</a></li>
-                    <li><a href="#courses">Layanan</a></li>
-                    <li><a href="/html/our-teams.html">Team</a></li>
-                    <li><a href="#" class="tbl-biru">Masuk</a></li>
+                    <li><a href="/index.html">Beranda</a></li>
+                    <li><a href="#services">Layanan</a></li>
+                    <li><a href="#teams">Team</a></li>
+                    <li><a href="" class="tbl-biru">Masuk</a></li>
                     <li><a href="/html/sign-up.html">Daftar</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Home -->
-    <div class="wrapper wrapper-home">
-        <section id="home">
-            <img src="./img/courier.png" alt="Courier Home">
-            <div class="kolom">
-                <label for="input-number-track">
-                    <h2>Track your Shipment</h2>
-                    <input type="text" name="input-number-track" id="input-number-track" class="input-number-track" placeholder="Masukkan Nomor Resi">
-                </label>
-                <p>Need help canging your delivery? <a href="#">Get help</a></p>
-                <input type="button" value="Track" class="btn-track">
-            </div>
-        </section>
-        </div>
-
-        <!-- CEK ONGKIR -->
-        <div class="containerCekOngkir">
-            <div class="formCekOngkir">
-                <h2>Cek Tarif</h2>
-                <form action="#" method="post">
-                    <div class="form-group">
-                        <label for="origin">Kota Asal:</label>
-                        <input type="text" id="origin" name="origin" placeholder="Masukkan kota asal" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="destination">Kota Tujuan:</label>
-                        <input type="text" id="destination" name="destination" placeholder="Masukkan kota tujuan" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="weight">Berat (kg):</label>
-                        <input type="number" id="weight" name="weight" placeholder="Masukkan berat paket" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="servicesOption">Layanan : </label>
-                        <select id="servicesOption" name="services" class="servicesOption">
-                            <option value="volvo">Courier STANDAR</option>
-                            <option value="saab">Courier CEPAT</option>
-                            <option value="mercedes">Courier SEHARI</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit">Cek Tarif</button>
-                    </div>
-                </form>
+    <!-- TEAM -->
+    <div class="container">
+        <h2>Our Team</h2>
+        <div class="our-team">
+            <h4>Project Leader</h4>
+            <div class="team-list">
+                <div class="team">
+                    <figure><img src="/img/dimas.png" alt=""></figure>
+                    <h3>Dimas Taufik </h3>
+                    <p>Universitas Muslim Indonesia || </p>
+                </div>
             </div>
         </div>
-
-        <!-- Layanan -->
-        <section id="service">
-            <div class="tengah">
-                <div class="kolom">
-                    <h2>Layanan</h2>
-                    <p>Anda dapat mengandalkan layanan ekspedisi kami untuk mengirimkan barang-barang Anda dengan harga yang kompetitif dan waktu pengiriman yang tepat</p>
-                </div>
-
-                <div class="services-list">
-                    <div class="services-card">
-                        <img src="./img/standar-service.png"/ alt="sehari-service">
-                        <p>Estimasi Kedatangan : 1 Hari</p>
-                        <p>Cakupan : Pulau Jawa</p>
-                        <p class="notes">*Waktu pengiriman tergantung daerah tujuan</p>
-                    </div>
-                    <div class="services-card">
-                        <img src="./img/cepat-service.png"/ alt="cepat-service">
-                        <p>Estimasi Kedatangan : 1 - 4 hari</p>
-                        <p>Cakupan : Pulau Jawa, Sumatera, Sulawesi, Bali, Kalimantan, Batam</p>
-                        <p class="notes">*Waktu pengiriman tergantung daerah tujuan</p>
-                    </div>
-                    <div class="services-card">
-                        <img src="./img/sehari-service.png"/ alt="standar-service">
-                        <p>Estimasi kedatangan : 3 - 7 hari</p>
-                        <p>Cakupan : Seluruh Indonesia</p>
-                        <p class="notes">*Waktu pengiriman tergantung daerah tujuan</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- FOOTER -->
-        <section id="our-team">
-            <div class="tengah">
-                <div class="kolom">
-                    <h2>Our Team</h2>
-                    <p>...............</p>
-                </div>
-                <div class="team-list">
-                    <div class="kartu-team">
-                        <img src="./img/profile.png" alt="person1"/>
-                    </div>
-                    <div class="kartu-team">
-                        <img src="./img/profile.png" alt="person2"/ >
-                    </div>
-                    <div class="kartu-team">
-                        <img src="./img/profile.png" alt="person3"/>
-                    </div>
-                    <div class="kartu-team">
-                        <img src="./img/profile.png" alt="person3"/>
-                    </div>
-                    <div class="kartu-team">
-                        <img src="./img/profile.png" alt="person3"/>
-                    </div>
-                </div>
-            </div>
-        </section>
     </div>
 
+    <div class="container">
+        <div class="our-team">
+            <h4>Front-End</h4>
+            <div class="team-list">
+                <div class="team">
+                    <figure><img src="/img/rozi.png" alt=""></figure>
+                    <h3>Afdol Fahmul Rozi</h3>
+                    <p>Universitas Negeri Medan || Ilmu Komputer</p>
+                </div>
+    
+                <div class="team">
+                    <figure><img src="/img/mazaya.png" alt=""></figure>
+                    <h3>Mazaya Najmy Tsaqyfa</h3>
+                    <p>Universitas Negeri Surabaya || Ilmu Ekonomi</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="our-team">
+            <h4>Back-End</h4>
+            <div class="team-list">
+                <div class="team">
+                    <figure><img src="/img/helda.png" alt=""></figure>
+                    <h3>Nurul Helda</h3>
+                    <p>Universitas Teuku Umar || Teknologi Informasi</p>
+                </div>
+    
+                <div class="team">
+                    <figure><img src="/img/profile.png" alt=""></figure>
+                    <h3>Rafif</h3>
+                    <p>.....</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="our-team">
+            <h4>Quality Assurance</h4>
+            <div class="team-list">
+                <div class="team">
+                    <figure><img src="/img/hikmatus.png" alt=""></figure>
+                    <h3>Hikmatus Latifah</h3>
+                    <p>Universitas Airlangga || Ekonomi Pembangunan</p>
+                </div>
+    
+                <div class="team">
+                    <figure><img src="/img/rani.png" alt=""></figure>
+                    <h3>Rani Oktaviana</h3>
+                    <p>Universitas Persada Indonesia Y.A.I || Sistem Informasi</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
     <div id="contact">
         <div class="wrapper">
             <div class="footer">
                 <div class="footer-section">
-                    <img src="./img/logo.png" alt="Logo">
+                    <img src="/img/logo.png" alt="Logo">
                 </div>
                 <div class="footer-section">
                     <h3>Contact</h3>
