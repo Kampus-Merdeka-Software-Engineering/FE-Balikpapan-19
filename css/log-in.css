@@ -8,6 +8,7 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: linear-gradient(90deg, rgba(42,153,175,1) 18%, rgba(64,138,255,1) 88%);
 }
 
 .wrapper {
@@ -16,13 +17,9 @@ body {
     position: relative;
 }
 
-
 /* NAVIGASI */
-
 nav {
     width: 100%;
-    margin: auto;
-    display: flex;
     line-height: 80px;
     position: -webkit-sticky; 
     position: sticky;
@@ -30,7 +27,6 @@ nav {
     background: #279EFF;
     z-index: 1;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-
 }
 
 nav ul {
@@ -42,6 +38,31 @@ nav ul {
 
 nav ul li {
     float: left;
+}
+
+nav ul li a {
+    color: black;
+    font-weight: bold;
+    padding: 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #3f72af;
+    transition: .4s;
+}
+
+.wrapper-nav{
+    width: 100%;
+}
+
+.wrapper-nav .menu{
+    display: flex;
+    justify-content: space-around;
+}
+
+.wrapper-nav .menu img{
+    width: 100px;
 }
 
 a.tbl-biru {
@@ -61,42 +82,7 @@ a.tbl-biru:hover {
     text-decoration: none;
 }
 
-.wrapper-nav{
-    width: 100%;
-}
-
-.wrapper-nav .menu{
-    display: flex;
-    justify-content: space-around;
-}
-
-.wrapper-nav .menu img{
-    width: 100px;
-}
-
-nav ul li a {
-    color: black;
-    font-weight: bold;
-    text-align: center;
-    padding: 0px 16px 0px 16px;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    color: #3f72af;
-    transition: .3s;
-}
-
-section {
-    margin: auto;
-    display: flex;
-    margin-bottom: 50px;
-}
-
-body{
-    background: linear-gradient(90deg, rgba(42,153,175,1) 18%, rgba(64,138,255,1) 88%);
-}
-
+/* HOME RESPONSIVE */
 .main{
 	width: 30%;
 	height: 500px;
@@ -111,7 +97,6 @@ body{
 #chk{
 	display: none;
 }
-
 
 .login label{
 	color: #ffffff;
@@ -169,39 +154,38 @@ button:hover{
 	background: #364f6b;
 }
 
-
 /* FOOTER */
-#contact {
+#footer {
     background: #279EFF;
     padding:50px 0px 50px 0px;
     margin-top: 200px;
 }
 
-.footer {
+.footer-list {
     width: 100%;
     position: relative;
     display: flex;
     flex-wrap: wrap;
     margin: auto;
+    line-height: 40px;
+}
+
+.footer-section {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.footer-list .footer-section img{
+    width: 200px;
+    margin-top: -30px;
 }
 
 .footer-section svg {
     margin-right: 20px;
 }
 
-.footer-section {
-    width: 30%;
-    margin: 0 auto;
-    line-height: 40px;
-}
-
-.footer .footer-section img{
-    width: 200px;
-}
-
 h3 {
     font-family: 'Cambria', sans-serif;
-    font-weight: 800;
     font-size: 30px;
     margin-bottom: 20px;
     color: #364f6b;
@@ -209,17 +193,13 @@ h3 {
     line-height: 20px;
 }
 
+/* MOBILE REPONSIVE */
 @media screen and (max-width: 991.98px) {
     .wrapper {
         width: 100%;
     }
 
-    .logo a {
-        display: block;
-        width: 100%;
-        text-align: center;
-    }
-
+    /*  NAVIGASI RESPONSIVE */ 
     nav{
         height: 130px;
     }
@@ -235,79 +215,17 @@ h3 {
         line-height: 60px;
     }
 
-    .wrapper-home #home{
-        display:block;
-    }
-
-    .wrapper-home #home img{
-        width: 300px;
-        margin: -100px auto;
-    }
-
-    .wrapper-home #home .kolom{
-        /* margin: 100px auto; */
-        margin-left: 50px;
-        margin-top: 100px;
-    }
-
-    .main{
-        width: 90%;
-    }
-
     nav .menu ul li {
         display: inline-block;
         float: none;
     }
 
-    .containerCekOngkir{
-        width: 60%;
+    /* HOME RESPONSIVE */
+    .main{
+        width: 90%;
     }
 
-    .servicesOption{
-        width: 100%;
-    }
-    
-    .team-list{
-        width: 100%;
-        display: block;
-        margin: 0 auto;
-    }
-
-    .services-card img {
-        width: 80%;
-        margin: auto;
-    }
-
-    .kartu-team{
-        width: 100%;
-        margin-top: 50px auto 0;
-    }
-
-    section {
-        display: block;
-    }
-
-    section img {
-        display: block;
-        width: 100%;
-        height: auto;
-    }
-
-    .services-card {
-        width: 50%;
-        margin-bottom: 10px;
-    }
-
-    #service .tengah .kolom p{
-        width: 80%;
-        margin: auto;
-        font-size: 20px;
-    }
-
-    .kartu-team {
-        width: 50%;
-    }
-
+    /* FOOTER RESPONSIVE */
     .footer-section {
         width: 100%;
         text-align: center;

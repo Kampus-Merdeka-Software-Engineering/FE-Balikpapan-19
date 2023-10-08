@@ -31,7 +31,6 @@ nav {
     z-index: 1;
     /* border-bottom:1px solid #364f6b; */
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-
 }
 
 nav ul {
@@ -94,8 +93,7 @@ section {
     margin-bottom: 50px;
 }
 
-
-/* TEAM */
+/* OUR TEAM */
 html {
     font-family: sans-serif;
     font-weight: 300;
@@ -107,6 +105,7 @@ html {
     margin: 50px;
     font-size: 50px;
     text-align: center;
+    color: #364f6b;
 }
 
 p {
@@ -117,7 +116,6 @@ p {
     width: 80%;
     margin: 50px auto;
 }
-
 
 figure {
     width: 500px;
@@ -192,15 +190,14 @@ figure:after {
     --hover: 1;
 }
 
-
 /* FOOTER */
-#contact {
+#footer {
     background: #279EFF;
     padding:50px 0px 50px 0px;
     margin-top: 200px;
 }
 
-.footer {
+.footer-list {
     width: 100%;
     position: relative;
     display: flex;
@@ -218,8 +215,9 @@ figure:after {
     margin: 0 auto;
 }
 
-.footer .footer-section img{
+.footer-list .footer-section img{
     width: 200px;
+    margin-top: -30px;
 }
 
 .team h3 {
@@ -236,17 +234,13 @@ figure:after {
     text-align: center;
 }
 
+/* MOBILE RESPONSIVE */
 @media screen and (max-width: 991.98px) {
     .wrapper {
         width: 100%;
     }
 
-    .logo a {
-        display: block;
-        width: 100%;
-        text-align: center;
-    }
-
+    /* NAVIGASI RESPONSIVE */
     nav{
         height: 130px;
     }
@@ -266,13 +260,8 @@ figure:after {
         display: inline-block;
         float: none;
     }
-    
-    .team-list{
-        width: 100%;
-        display: block;
-        margin: 0 auto;
-    }
 
+    /* TEAM REPONSIVE */
     .container h2{
         font-size: 30px;
     }
@@ -290,12 +279,7 @@ figure:after {
         --hover: 1;
     }
 
-    section img {
-        display: block;
-        width: 100%;
-        height: auto;
-    }
-
+    /* FOOTER RESPONSIVE */
     .footer-section {
         width: 100%;
         text-align: center;
