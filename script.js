@@ -18,6 +18,7 @@ function doCheckCost(){
     .then((reponse)=>reponse.json())
     .then(function(json){
         document.getElementById("ongkirResult").textContent = json.responseSucsess;
+        console.log(json);
     })
     .catch(function(error){
         document.getElementById("ongkirResult").textContent = error;

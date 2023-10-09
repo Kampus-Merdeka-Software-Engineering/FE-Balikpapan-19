@@ -343,14 +343,15 @@ h3 {
 }
 
 /* MOBILE REPONSIVE */
-@media screen and (max-width: 991.98px) {
+@media screen and (max-width: 992px) {
     .wrapper {
         width: 100%;
     }
 
     /* NAVIGASI RESPONSIVE */
     nav{
-        height: 130px;
+        width: 100%;
+        padding: 10px 0;
     }
 
     nav .menu {
@@ -453,5 +454,94 @@ h3 {
         width: 100%;
         text-align: center;
         margin: 20px 0;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    /* REPONSIVE NAVIGASI */
+    .wrapper-nav .menu img{
+        height: 100px;
+        margin-top: 40px;
+    }
+
+    .wrapper-nav .menu ul li a{
+        font-size: 14px;
+    }
+
+    /* HOME RESPONSIVE */
+    .home #home{
+        margin: auto;
+    }
+
+    .home #home img{
+        width: 200px;
+    }
+
+    .home #home .kolom h2{
+        font-size: 30px;
+        margin: 10px 0;
+    }
+
+    .home #home .kolom .input-number-track{
+        width: 60%;
+    }
+
+    .home #home .kolom p{
+        width: 90%;
+    }
+
+    /* CEK ONGKIR RESPONSIVE */
+    #cekOngkir .formCekOngkir h2{
+        font-size: 30px;
+    }
+
+    /* ABOUT US RESPONSIVE */
+    #about .about-us h2{
+        font-size: 30px;
+    }
+    
+    #about .about-us p{
+        font-size: 15px;
+    }
+
+    /* SERVICE RESPONSIVE */
+    #services .tengah .kolom h2{
+        font-size: 30px;
+        margin: 0px;
+    }
+
+    #services .tengah .services-list {
+        margin: auto;
+    }
+
+    #services .tengah .services-list .services-card{
+        padding: 10px 0;
+        width: 80%;
+    }
+
+    #services .tengah .services-list .services-card p{
+        font-size: 10px;
+    }
+
+    #services .tengah .kolom p{
+        font-size: 15px;
+    }
+
+    /* FOOTER RESPONSIVE */
+    #footer .wrapper .footer-list .footer-section img{
+        width: 150px;
+    }
+
+    #footer .wrapper .footer-list .footer-section h3{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    /* REPONSIVE NAVIGASI */
+    .wrapper-nav .menu img{
+        width: 100px;
+        height: 100px;
+        margin-top: 40px;
     }
 }
