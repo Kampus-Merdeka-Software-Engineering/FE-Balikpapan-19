@@ -35,7 +35,7 @@
                     <input type="text" name="input-number-track" id="input-number-track" class="input-number-track" placeholder="Masukkan Nomor Resi">
                 </label>
                 <p>Need help canging your delivery? <a href="#">Get help</a></p>
-                <input type="button" value="Track" class="btn-track">
+                <a href="html/error.html"><input type="button" value="Track" class="btn-track"></a>
             </div>
         </section>
     </div>
@@ -47,11 +47,89 @@
             <form action="#" method="post">
                 <div class="form-group">
                     <label for="origin">Kota Asal:</label>
-                    <input type="text" id="origin" name="origin" placeholder="Masukkan kota asal" required>
+                    <select name="origin" id="origin">
+                        <option value="1">Aceh</option>
+                        <option value="2">Sumatera Utara</option>
+                        <option value="3">Sumatera Selatan</option>
+                        <option value="4">Sematera Barat</option>
+                        <option value="5">Bengkulu</option>
+                        <option value="6">Riau</option>
+                        <option value="7">Kepulauan Riau</option>
+                        <option value="8">Jambi</option>
+                        <option value="9">Lampung</option>
+                        <option value="10">Bangka Belitung</option>
+                        <option value="11">Kalimantan Barat</option>
+                        <option value="12">Kalimantan Timur</option>
+                        <option value="13">Kalimantan Selatan</option>
+                        <option value="14">Kalimantan Tengah</option>
+                        <option value="15">Kalimantan Utara</option>
+                        <option value="16">Banten</option>
+                        <option value="17">DKI Jakarta</option>
+                        <option value="18">Jawa Barat</option>
+                        <option value="19">Jawa Tengah</option>
+                        <option value="20">Daerah Istimewa Yokyakarta</option>
+                        <option value="21">Jawa Timur</option>
+                        <option value="22">Bali</option>
+                        <option value="23">Nusa Tenggara Timur</option>
+                        <option value="24">Nusa Tenggara Barat</option>
+                        <option value="25">Gorontalo</option>
+                        <option value="26">Sulawesi Barat</option>
+                        <option value="27">Sulawesi Tengah</option>
+                        <option value="28">Sulawesi Utara</option>
+                        <option value="29">Sulawesi Tenggara</option>
+                        <option value="30">Sulawesi Selatan</option>
+                        <option value="31">Maluku Utara</option>
+                        <option value="32">Maluku</option>
+                        <option value="33">Papua Barat</option>
+                        <option value="34">Papua</option>
+                        <option value="35">Papua Tengah</option>
+                        <option value="36">Papua Pegunungan</option>
+                        <option value="37">Papua Selatan</option>
+                        <option value="38">Papua Barat Daya</option>
+                    </select>
                 </div>
                 <div class="form-group">
                     <label for="destination">Kota Tujuan:</label>
-                    <input type="text" id="destination" name="destination" placeholder="Masukkan kota tujuan" required>
+                    <select name="destination" id="destination">
+                        <option value="1">Aceh</option>
+                        <option value="2">Sumatera Utara</option>
+                        <option value="3">Sumatera Selatan</option>
+                        <option value="4">Sematera Barat</option>
+                        <option value="5">Bengkulu</option>
+                        <option value="6">Riau</option>
+                        <option value="7">Kepulauan Riau</option>
+                        <option value="8">Jambi</option>
+                        <option value="9">Lampung</option>
+                        <option value="10">Bangka Belitung</option>
+                        <option value="11">Kalimantan Barat</option>
+                        <option value="12">Kalimantan Timur</option>
+                        <option value="13">Kalimantan Selatan</option>
+                        <option value="14">Kalimantan Tengah</option>
+                        <option value="15">Kalimantan Utara</option>
+                        <option value="16">Banten</option>
+                        <option value="17">DKI Jakarta</option>
+                        <option value="18">Jawa Barat</option>
+                        <option value="19">Jawa Tengah</option>
+                        <option value="20">Daerah Istimewa Yokyakarta</option>
+                        <option value="21">Jawa Timur</option>
+                        <option value="22">Bali</option>
+                        <option value="23">Nusa Tenggara Timur</option>
+                        <option value="24">Nusa Tenggara Barat</option>
+                        <option value="25">Gorontalo</option>
+                        <option value="26">Sulawesi Barat</option>
+                        <option value="27">Sulawesi Tengah</option>
+                        <option value="28">Sulawesi Utara</option>
+                        <option value="29">Sulawesi Tenggara</option>
+                        <option value="30">Sulawesi Selatan</option>
+                        <option value="31">Maluku Utara</option>
+                        <option value="32">Maluku</option>
+                        <option value="33">Papua Barat</option>
+                        <option value="34">Papua</option>
+                        <option value="35">Papua Tengah</option>
+                        <option value="36">Papua Pegunungan</option>
+                        <option value="37">Papua Selatan</option>
+                        <option value="38">Papua Barat Daya</option>
+                    </select>
                 </div>
                 <div class="form-group">
                     <label for="weight">Berat (kg):</label>
@@ -84,19 +162,19 @@
             </div>
             <div class="services-list">
                 <div class="services-card">
-                    <img src="./img/standar-service.png"/ alt="sehari-service">
+                    <img src="./img/standar-service.png" alt="sehari-service">
                     <p>Estimasi Kedatangan : 1 Hari</p>
                     <p>Cakupan : Pulau Jawa</p>
                     <p class="notes">*Waktu pengiriman tergantung daerah tujuan</p>
                 </div>
                 <div class="services-card">
-                    <img src="./img/cepat-service.png"/ alt="cepat-service">
+                    <img src="./img/cepat-service.png" alt="cepat-service">
                     <p>Estimasi Kedatangan : 1 - 4 hari</p>
                     <p>Cakupan : Pulau Jawa, Sumatera, Sulawesi, Bali, Kalimantan, Batam</p>
                     <p class="notes">*Waktu pengiriman tergantung daerah tujuan</p>
                 </div>
                 <div class="services-card">
-                    <img src="./img/sehari-service.png"/ alt="standar-service">
+                    <img src="./img/sehari-service.png" alt="standar-service">
                     <p>Estimasi kedatangan : 3 - 7 hari</p>
                     <p>Cakupan : Seluruh Indonesia</p>
                     <p class="notes">*Waktu pengiriman tergantung daerah tujuan</p>

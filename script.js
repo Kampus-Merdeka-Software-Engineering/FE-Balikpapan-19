@@ -1,28 +1,17 @@
-function doCheckCost(){
-    const requestOngkir = new Request("https://eok8jd671o4psp5.m.pipedream.net",{
-    method: "POST",
-    headers: {
-        "Content-Type": "application/json",
-        "Accept": "application/json"
-    },
-    body: JSON.stringify({
-        origin : document.getElementById("origin").value,
-        destination : document.getElementById("destination").value,
-        weight : document.getElementById("weight").value
-    })
-});
-
-    const responseOngkir = fetch(requestOngkir);
-
-    responseOngkir
-    .then((reponse)=>reponse.json())
-    .then(function(json){
-        document.getElementById("ongkirResult").textContent = json.responseSucsess;
-        console.log(json);
-    })
-    .catch(function(error){
-        document.getElementById("ongkirResult").textContent = error;
-    })
+function hitungTarif()
+{
+    const origin = +document.getElementById("origin").value;
+    const destination = +document.getElementById("destination").value;
+    const weight = +document.getElementById("weight").value;    
+    
+    let tarif = 0;
+    if(Math.abs(destination - origin) === 0){
+        tarif = 16000 * weight;
+    }
+    else{
+        tarif = Math.abs(destination - origin) * 3000 + 6000 + 16000 * weight;
+    } 
+    document.getElementById("ongkirResult").innerHTML = `Tarif: Rp. ${tarif}`;
 }
 
-document.getElementById("checkCost").onclick = doCheckCost;
+document.getElementById("checkCost").onclick = hitungTarif;
