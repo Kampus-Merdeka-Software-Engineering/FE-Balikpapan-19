@@ -7,7 +7,7 @@ async function getPrice() {
         const response = await fetch(`${API_BASE_URL}/price?origin=${origin}&destination=${destination}&weight=${weight}`);
         const price = await response.json();
         const priceContainer = document.getElementById('ongkirResult');
-        priceContainer.innerHTML = `Harganya Rp. ${price.data.price * weight}`;
+        priceContainer.innerHTML = `Harganya Rp. ${price.data.price * 160 * weight}`;
     } catch (error) {
         console.error('Error fetching book:', error);
         const priceContainer = document.getElementById('ongkirResult');
