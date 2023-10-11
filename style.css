@@ -189,8 +189,28 @@ label {
     margin-top: 30px;
 }
 
-input[type="text"], input[type="number"] {
+select#origin, select#destination {
     width: 50%;
+    padding: 20px;
+    margin-top: 10px;
+    border: 1.5px solid #ccc;
+    background: #e0dede;
+    border-radius: 3px;
+    text-align: center;
+}
+
+input#weight{
+    width: 30%;
+    padding: 20px;
+    margin-top: 10px;
+    border: 1.5px solid #ccc;
+    background: #e0dede;
+    border-radius: 3px;
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 70%;
     padding: 20px;
     margin-top: 10px;
     border: 1.5px solid #ccc;
@@ -394,8 +414,12 @@ h3 {
         width: 60%;
     }
 
-    input[type="text"], input[type="number"] {
+    select#origin, select#destination {
         width: 80%;
+    }
+    
+    input#weight{
+        width: 50%;
     }
 
     /* ABOUT RESPONSIVE */
